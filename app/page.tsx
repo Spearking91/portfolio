@@ -100,7 +100,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={80}>
               <Image
-                src="/suit.png"
+                src="/suits.png"
                 alt="About me"
                 width={500}
                 height={500}

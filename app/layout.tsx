@@ -26,15 +26,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
+    
+
+    
+
+
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <Analytics />
       <body className="min-h-full flex flex-col">
         <Navbar />
         <div className="flex-1">{children}</div>
         <Footer />
       </body>
     </html>
+   
   );
 }

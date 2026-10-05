@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="hero-content flex-col lg:flex-row gap-10">
           <Reveal>
             <Image
-              src="/suit.png"
+              src="/suits.png"
               alt="Kelvin Acquah"
               width={420}
               height={420}

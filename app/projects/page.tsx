@@ -28,9 +28,9 @@ export default function ProjectsPage() {
             <Reveal key={project.slug} delay={index * 80}>
               <Link
                 href={`/projects/${project.slug}`}
-                className="card bg-base-100 h-full shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:aura hover:aura-rainbow"
+                className="card 0 h-full shadow-sm p-10 transition-all duration-3000 hover:-translate-y-1 hover:shadow-lg hover:aura hover:aura-rainbow"
               >
-                <div className="card-body">
+                <div className="card-body bg-base-100">
                   <p className="text-xs font-semibold text-primary">
                     {project.year}
                   </p>

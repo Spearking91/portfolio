@@ -1,7 +1,7 @@
 "use client";
 
+import { socials } from "@/app/data/portfolio";
 import { FormEvent, useState } from "react";
-import { socials } from "../data/portfolio";
 
 const ContactForm = () => {
   const [sent, setSent] = useState(false);

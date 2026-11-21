@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Stats from "../components/stats";
-import Timeline from "../components/timeline";
-import Reveal from "../components/reveal";
+import Stats from "../../components/stats";
+import Timeline from "../../components/timeline";
+import Reveal from "../../components/reveal";
 
 export const metadata: Metadata = {
   title: "About",

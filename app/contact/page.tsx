@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Github, Gmail, Linkedin, Location } from "@boxicons/react";
-import ContactForm from "../components/contact-form";
+import ContactForm from "../../components/contact-form";
 import { socials } from "../data/portfolio";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Hire Kelvin Acquah for frontend, Next.js, and React Native work.",
+  description:
+    "Hire Kelvin Acquah for frontend, Next.js, and React Native work.",
 };
 
 export default function ContactPage() {

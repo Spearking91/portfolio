@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Github, Gmail, Linkedin } from "@boxicons/react";
-import { socials } from "../data/portfolio";
+import { socials } from "@/app/data/portfolio";
+
 
 const Footer = () => {
   return (

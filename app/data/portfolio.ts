@@ -41,52 +41,31 @@ export const skills = [
   },
 ] as const;
 
-export const projects = [
-  {
-    slug: "cross-platform-apps",
-    title: "Cross-platform product apps",
-    year: "2023 – 2024",
-    summary:
-      "Mobile-first product work in React Native and Expo, with shared TypeScript and a Supabase backend.",
-    description:
-      "I spent 2023–2024 building cross-platform mobile experiences: navigation, auth, and screens that stay responsive on different device sizes. Expo keeps the loop fast; Supabase handles accounts, data, and realtime updates so the client stays focused on interaction.",
-    stack: ["React Native", "Expo", "TypeScript", "Supabase"],
-    href: "https://github.com/Spearking91",
-  },
+export type Projecty = {
+  slug: string;
+  title: string;
+  year: string;
+  summary: string;
+  description: string;
+  stack: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+};
+
+export const projects: Projecty[] = [
   {
     slug: "nextjs-web-apps",
-    title: "Next.js web applications",
+    title: "Oyce Jewels",
     year: "2026",
     summary:
-      "High-performance websites and dashboards with the Next.js App Router, typed data, and clean UI systems.",
+      "A jewelry storefront built with Next.js, TypeScript, and Supabase.",
     description:
       "In 2026 I expanded into Next.js for marketing sites and app-like web UIs. I care about routing structure, loading states, and connecting the same Supabase data layer used on mobile so products feel consistent across platforms.",
     stack: ["Next.js", "TypeScript", "Supabase", "DaisyUI"],
-    href: "https://github.com/Spearking91",
+    githubUrl: "https://github.com/Spearking91/jewels",
+    liveUrl: "https://oycejewels.vercel.app",
   },
-  {
-    slug: "embedded-lab-support",
-    title: "Embedded systems teaching support",
-    year: "2024 – 2025",
-    summary:
-      "Firmware, sensors, and hardware labs on Arduino, ESP32, and Raspberry Pi while teaching at UMaT.",
-    description:
-      "As a teaching assistant I helped students take microcontroller projects from circuit prototype to working firmware. That included I2C, SPI, and UART interfacing, plus debugging the messy middle between hardware and software.",
-    stack: ["Arduino", "ESP32", "Raspberry Pi", "Firmware"],
-    href: "https://github.com/Spearking91",
-  },
-  {
-    slug: "retail-operations",
-    title: "Retail POS & inventory operations",
-    year: "2025 – 2026",
-    summary:
-      "Day-to-day ownership of supermarket POS data, stock tracking, and staff training on the floor systems.",
-    description:
-      "At Dessa Bliss I designed and oversaw inventory and POS workflows: pricing updates, stock accuracy, and training junior staff. It is operations work, but it sharpened how I think about data entry, reliability, and tools people actually use under pressure.",
-    stack: ["POS", "Inventory", "Operations"],
-    href: "https://github.com/Spearking91",
-  },
-] as const;
+];
 
 export type Skill = (typeof skills)[number];
 export type Project = (typeof projects)[number];

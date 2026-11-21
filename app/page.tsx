@@ -11,11 +11,14 @@ import {
   Typescript,
 } from "@boxicons/react";
 import Link from "next/link";
-import Timeline from "./components/timeline";
-import Stats from "./components/stats";
-import SkillCard from "./skillCard";
-import Reveal from "./components/reveal";
+
 import { projects, skills, socials } from "./data/portfolio";
+import Reveal from "@/components/reveal";
+
+import SkillCard from "../components/skillCard";
+import Stats from "@/components/stats";
+import Card from "@/components/card";
+import Timeline from "@/components/timeline";
 
 const skillIcons = {
   nextjs: NextJs,
@@ -188,27 +191,17 @@ export default function Home() {
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">
             {projects.slice(0, 4).map((project, index) => (
-              <Reveal key={project.slug} delay={index * 90}>
-                <Link
-                  href={`/projects/${project.slug}`}
-                  className="card h-full shadow-sm transition-all duration-3000 hover:-translate-y-1 hover:shadow-lg hover:aura hover:aura-rainbow"
-                >
-                  <div className="card-body bg-base-100">
-                    <p className="text-xs font-semibold text-primary">
-                      {project.year}
-                    </p>
-                    <h3 className="card-title">{project.title}</h3>
-                    <p>{project.summary}</p>
-                    <div className="card-actions">
-                      {project.stack.slice(0, 3).map((tag) => (
-                        <div key={tag} className="badge badge-outline">
-                          {tag}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </Link>
-              </Reveal>
+              <Card
+                key={index}
+                id={index}
+                slug={project.slug}
+                title={project.title}
+                year={project.year}
+                summary={project.summary}
+                description={project.description}
+                stack={project.stack}
+                liveUrl={project.liveUrl}
+              />
             ))}
           </div>
           <Reveal>

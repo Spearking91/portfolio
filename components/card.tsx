@@ -22,7 +22,7 @@ const Card = ({ id, slug, title,year, summary,liveUrl, stack}: props) => {
     <Reveal key={slug} delay={id * 80}>
       <Link
         href={`/projects/${slug}`}
-        className="card h-full overflow-hidden bg-base-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+        className="card h-full overflow-hidden bg-base-200 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
       >
         {previewUrl && (
           <figure className="aspect-[16/10] w-full overflow-hidden bg-base-300">

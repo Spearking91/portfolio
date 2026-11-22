@@ -1,63 +1,7 @@
-import React from "react";
+import { items, TimelineItem } from "@/app/data/portfolio";
 
-type TimelineItem = {
-  date: string;
-  title: string;
-  org?: string;
-  description: string;
-  tags: string[];
-  newTag?: boolean;
-};
 
-const items: TimelineItem[] = [
-  {
-    date: "2026",
-    title: "Next.js",
-    description:
-      "Building scalable, high-performance web apps with the Next.js App Router.",
-    tags: ["Next.js", "TypeScript", "Supabase"],
-    newTag: true,
-  },
-  {
-    date: "Mar 2025 – Jan 2026",
-    title: "Manager",
-    org: "Dessa Bliss Disposables and Diaper Hub",
-    description:
-      "Designed and oversaw the supermarket POS and inventory database, keeping pricing, stock tracking, and product data accurate. Supervised floor operations, cash management, and junior staff training on POS systems.",
-    tags: ["POS", "Inventory", "Operations"],
-  },
-  {
-    date: "Oct 2024 – Sep 2025",
-    title: "Teaching Assistant",
-    org: "University of Mines and Technology",
-    description:
-      "Guided students through firmware, hardware integration, and sensor interfacing (I2C, SPI, UART) on Arduino, ESP32, and Raspberry Pi — from circuit prototyping to debugging.",
-    tags: ["Arduino", "ESP32", "Embedded"],
-  },
-  {
-    date: "2023 – 2024",
-    title: "React Native",
-    description:
-      "Cross-platform mobile development with React Native and Expo: responsive UIs, solid architecture, and backend integration.",
-    tags: ["React Native", "Expo", "Supabase"],
-  },
-  {
-    date: "Oct 2023 – Dec 2023",
-    title: "Networking Intern",
-    org: "Electricity Company of Ghana",
-    description:
-      "Installed and configured software to match user requirements. Monitored network performance and troubleshot issues.",
-    tags: ["Networking", "Support"],
-  },
-  {
-    date: "Jan 2021 – Oct 2024",
-    title: "BSc. Computer Engineering",
-    org: "University of Energy and Natural Resources",
-    description:
-      "Degree in Computer Engineering, with a focus on software, systems, and hardware–software integration.",
-    tags: ["Education"],
-  },
-];
+
 
 const CheckIcon = ({ filled = true }: { filled?: boolean }) => (
   <svg

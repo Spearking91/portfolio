@@ -65,6 +65,18 @@ export const projects: Projecty[] = [
     githubUrl: "https://github.com/Spearking91/jewels",
     liveUrl: "https://oycejewels.vercel.app",
   },
+  {
+    slug: "nextjs-web-apps",
+    title: "Dessa Bliss",
+    year: "2026",
+    summary:
+      "An ecommerce site for a wholesale and retail shop",
+    description:
+      "In 2026 I expanded into Next.js for marketing sites and app-like web UIs. I care about routing structure, loading states, and connecting the same Supabase data layer used on mobile so products feel consistent across platforms.",
+    stack: ["Next.js", "TypeScript", "Supabase", "DaisyUI"],
+    githubUrl: "https://github.com/Spearking91/dessa_bliss_site",
+    liveUrl: "https://dessabliss.vercel.app",
+  },
 ];
 
 export type Skill = (typeof skills)[number];

@@ -50,6 +50,8 @@ export type Projecty = {
   stack: string[];
   githubUrl?: string;
   liveUrl?: string;
+  previewImage?: string; // Direct image URL or /images/... path for mobile/app projects
+  snackUrl?: string;
 };
 
 export const projects: Projecty[] = [
@@ -66,16 +68,37 @@ export const projects: Projecty[] = [
     liveUrl: "https://oycejewels.vercel.app",
   },
   {
-    slug: "nextjs-web-apps",
+    slug: "nextjs-web-apps-2",
     title: "Dessa Bliss",
     year: "2026",
-    summary:
-      "An ecommerce site for a wholesale and retail shop",
+    summary: "An ecommerce site for a wholesale and retail shop",
     description:
       "In 2026 I expanded into Next.js for marketing sites and app-like web UIs. I care about routing structure, loading states, and connecting the same Supabase data layer used on mobile so products feel consistent across platforms.",
     stack: ["Next.js", "TypeScript", "Supabase", "DaisyUI"],
     githubUrl: "https://github.com/Spearking91/dessa_bliss_site",
     liveUrl: "https://dessabliss.vercel.app",
+  },
+  {
+    slug: "nextjs-web-apps",
+    title: "Stock Sync",
+    year: "2026",
+    summary: "An ecommerce site for a wholesale and retail shop",
+    description:
+      "In 2026 I expanded into Next.js for marketing sites and app-like web UIs. I care about routing structure, loading states, and connecting the same Supabase data layer used on mobile so products feel consistent across platforms.",
+    stack: ["Next.js", "TypeScript", "Supabase", "DaisyUI"],
+    githubUrl: "https://github.com/Spearking91/stocksync",
+    liveUrl: "https://stocksync.vercel.app",
+  },
+  {
+    slug: "React native app",
+    title: "Astream",
+    year: "2025",
+    summary: "A chat application",
+    description:
+      "In 2026 I expanded into Next.js for marketing sites and app-like web UIs. I care about routing structure, loading states, and connecting the same Supabase data layer used on mobile so products feel consistent across platforms.",
+    stack: ["React Native", "TypeScript", "Supabase"],
+    githubUrl: "https://github.com/Spearking91/stocksync",
+    liveUrl: "https://stocksync.vercel.app",
   },
 ];
 
